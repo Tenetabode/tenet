@@ -1,6 +1,6 @@
 var CONNECTION_DATA = {
-	"TENET_DOMAIN": "https://tenettest.herokuapp.com",
-	"TENET_EMPLOYEE_LOGIN_PAGE": "/tenet",
+	"TENET_DOMAIN": "https://tenetabode.herokuapp.com",
+	"TENET_EMPLOYEE_LOGIN_PAGE": "/tenet/index.html",
 	"TENET_EMPLOYEE_REDIRECT_URL_AFTER_SIGN_ON": "/tenet/employeehome.html",
 	"TENET_EMPLOYEE_BUILDER_DETAILS_PAGE": "/tenet/builder.html",
 	"TENET_EMPLOYEE_NEW_BUILDER_PAGE": "/tenet/newbuilder.html",
