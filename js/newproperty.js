@@ -16,7 +16,7 @@ function add(buttonNode) {
 function changeType(dropDownBoxNode) {
     var visible = "Rent";
     var invisible = "Sale";
-    if (dropDownBoxNode.value == "Sale") {
+    if (dropDownBoxNode.value == "SELL") {
         invisible = "Rent";
         visible = "Sale";
     }
