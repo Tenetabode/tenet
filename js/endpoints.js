@@ -8,6 +8,9 @@ var CONNECTION_DATA = {
 	"TENET_EMPLOYEE_BUILDING_DETAILS_PAGE": "/tenet/building.html",
 	"TENET_EMPLOYEE_NEW_PROPERTY_PAGE": "/tenet/newproperty.html",
 	"TENET_EMPLOYEE_PROPERTY_DETAILS_PAGE": "/tenet/property.html",
+	"TENET_EMPLOYEE_NEW_MANAGEMENT_USER_PAGE": "/tenet/newmanagementuser.html",
+	"TENET_EMPLOYEE_MANAGEMENT_USERS_LIST_PAGE": "/tenet/managementusershome.html",
+	"TENET_EMPLOYEE_CALLBACK_LIST_PAGE": "/tenet/callbacklist.html",
 	"TENET_EMPLOYEE_LOGIN_ENDPOINT": "/employee/signin",
 	"TENET_EMPLOYEE_PROFILE_ENDPOINT": "/employee/profile",
 	"TENET_ALL_BUILDERS_LIST_ENDPOINT": "/builder/all",
@@ -26,4 +29,8 @@ var CONNECTION_DATA = {
 	"TENET_EMPLOYEE_PROPERTY_PROFILE_ENDPOINT_PART_2": "/profile",
 	"TENET_EMPLOYEE_TOKEN_ENDPOINT": "/employee/gettoken",
 	"TENET_GOOGLE_SIGNIN_ENDPOINT": "/auth/googlesignin",
+	"TENET_ADD_MANAGEMENT_USER_ENDPOINT": "/employee/addmanagementuser",
+	"TENET_ALL_PROJECTS_ENDPOINT": "/building/allprojects",
+	"TENET_ALL_MANAGEMENT_USERS_LIST_ENDPOINT": "/employee/managementusers/all",
+	"TENET_ALL_CALLBACK_LIST_ENDPOINT": "/employee/getcallbackrecords",
 };

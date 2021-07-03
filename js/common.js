@@ -273,3 +273,66 @@ function getApartmentDetails(apartmentId, callback) {
     );
   }
 }
+
+function getAllBuildingsList(callback) {
+  var employeeAuthToken = window.localStorage.getItem("tenetEmployeeAuthToken");
+  sendToServer({
+      method: "POST",
+      headers: {
+        "x-employee-access-token": employeeAuthToken,
+      },
+    },
+    CONNECTION_DATA.TENET_DOMAIN + CONNECTION_DATA.TENET_ALL_PROJECTS_ENDPOINT,
+    "",
+    function (response1) {
+      var responseObj1 = JSON.parse(response1);
+      callback(responseObj1);
+    },
+    function (response1) {
+      console.log("ERROR : " + response1);
+      callback(null);
+    }
+  );
+}
+
+function getAllManagementUsersList(callback) {
+  var employeeAuthToken = window.localStorage.getItem("tenetEmployeeAuthToken");
+  sendToServer({
+      method: "POST",
+      headers: {
+        "x-employee-access-token": employeeAuthToken,
+      },
+    },
+    CONNECTION_DATA.TENET_DOMAIN + CONNECTION_DATA.TENET_ALL_MANAGEMENT_USERS_LIST_ENDPOINT,
+    "",
+    function (response1) {
+      var responseObj1 = JSON.parse(response1);
+      callback(responseObj1);
+    },
+    function (response1) {
+      console.log("ERROR : " + response1);
+      callback(null);
+    }
+  );
+}
+
+function getAllCallBackRecordsList(callback) {
+  var employeeAuthToken = window.localStorage.getItem("tenetEmployeeAuthToken");
+  sendToServer({
+      method: "POST",
+      headers: {
+        "x-employee-access-token": employeeAuthToken,
+      },
+    },
+    CONNECTION_DATA.TENET_DOMAIN + CONNECTION_DATA.TENET_ALL_CALLBACK_LIST_ENDPOINT,
+    "",
+    function (response1) {
+      var responseObj1 = JSON.parse(response1);
+      callback(responseObj1);
+    },
+    function (response1) {
+      console.log("ERROR : " + response1);
+      callback(null);
+    }
+  );
+}
