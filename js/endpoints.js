@@ -1,5 +1,5 @@
 var CONNECTION_DATA = {
-	"TENET_DOMAIN": "https://tenetabode.herokuapp.com",
+	"TENET_DOMAIN": "https://service.tenetabode.com",
 	"TENET_EMPLOYEE_LOGIN_PAGE": "/tenet/index.html",
 	"TENET_EMPLOYEE_REDIRECT_URL_AFTER_SIGN_ON": "/tenet/employeehome.html",
 	"TENET_EMPLOYEE_BUILDER_DETAILS_PAGE": "/tenet/builder.html",
@@ -24,6 +24,6 @@ var CONNECTION_DATA = {
 	"TENET_ADD_PROPERTY_ENDPOINT": "/employee/addapartment",
 	"TENET_EMPLOYEE_PROPERTY_PROFILE_ENDPOINT_PART_1": "/apartment/",
 	"TENET_EMPLOYEE_PROPERTY_PROFILE_ENDPOINT_PART_2": "/profile",
-	"TENET_EMPLOYEE_TOKEN_ENDPOINT": "/employee/getemployeetoken",
+	"TENET_EMPLOYEE_TOKEN_ENDPOINT": "/employee/gettoken",
 	"TENET_GOOGLE_SIGNIN_ENDPOINT": "/auth/googlesignin",
 };
