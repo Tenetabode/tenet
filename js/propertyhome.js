@@ -73,4 +73,12 @@ window.onload = function (event) {
         });
     }
 
+    var uploadImagesButtons = document.getElementsByClassName("uploadImagesButton");
+    for (g = 0; g < uploadImagesButtons.length; ++g) {
+        uploadImagesButtons[g].addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location = CONNECTION_DATA.TENET_UPLOAD_APARTMENT_PHOTOS_PAGE + "?apartmentId=" + apartmentId;
+        });
+    }
+
 }

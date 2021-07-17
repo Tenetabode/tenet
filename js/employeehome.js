@@ -76,4 +76,20 @@ window.onload = function (event) {
         });
     }
 
+    var managementUsersListButtons = document.getElementsByClassName("managementUsersListButton");
+    for (g = 0; g < managementUsersListButtons.length; ++g) {
+        managementUsersListButtons[g].addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location = CONNECTION_DATA.TENET_EMPLOYEE_MANAGEMENT_USERS_LIST_PAGE;
+        });
+    }
+
+    var callbackListButtons = document.getElementsByClassName("callbackListButton");
+    for (g = 0; g < callbackListButtons.length; ++g) {
+        callbackListButtons[g].addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location = CONNECTION_DATA.TENET_EMPLOYEE_CALLBACK_LIST_PAGE;
+        });
+    }
+
 }

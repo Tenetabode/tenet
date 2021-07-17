@@ -14,7 +14,9 @@ function sendToServer(
     }
   };
   xhttp.open(options.method, endpoint, true);
-  xhttp.setRequestHeader("Content-type", "application/json");
+  if(!options.noHeaderFlag){
+    xhttp.setRequestHeader("Content-type", "application/json");
+  }
   if (options.headers) {
     var keys = Object.keys(options.headers);
     for (j = 0; j < keys.length; ++j) {

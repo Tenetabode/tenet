@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>Apartment Images Upload Page</title>
+
+    <!-- CSS  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <header></header>
+    <section class="pageContentWhileLoading">
+        <div class="container">
+            <h6>&nbsp;</h6>
+            <h3 class="center-align">TENET</h3>
+        </div>
+    </section>
+    <section class="pageContentWhileLoading">
+        <form id="mainForm" enctype="multipart/form-data">
+            <div class="container">
+                <h6 class="center-align">Apartment Images Upload Page</h6>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        <div class="file-field input-field">
+                            <div class="btn blue white-text">
+                                <span>Hall Photos</span>
+                                <input type="file" name="hall" multiple>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload Hall Photos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="file-field input-field">
+                            <div class="btn blue white-text">
+                                <span>Room Photos</span>
+                                <input type="file" name="rooms" multiple>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload Room Photos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="file-field input-field">
+                            <div class="btn blue white-text">
+                                <span>Kitchen Photos</span>
+                                <input type="file" name="kitchen" multiple>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload Kitchen Photos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="file-field input-field">
+                            <div class="btn blue white-text">
+                                <span>Other Photos</span>
+                                <input type="file" name="others" multiple>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text"
+                                    placeholder="Upload Other Photos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="file-field input-field">
+                            <div class="btn blue white-text">
+                                <span>Yard Photos</span>
+                                <input type="file" name="yard" multiple>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload Yard Photos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="file-field input-field">
+                            <div class="btn blue white-text">
+                                <span>Bathroom Photos</span>
+                                <input type="file" name="bathroom" multiple>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload Bathroom Photos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="file-field input-field">
+                            <div class="btn blue white-text">
+                                <span>Balcony Photos</span>
+                                <input type="file" name="balcony" multiple>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload Balcony Photos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        <div class="file-field input-field">
+                            <div class="btn blue white-text">
+                                <span>Common Area Photos</span>
+                                <input type="file" name="commonArea" multiple>
+                            </div>
+                            <div class="file-path-wrapper">
+                                <input class="file-path validate" type="text" placeholder="Upload Common Area Photos">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        &nbsp;<br />&nbsp;<br />
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 m5 l3 offset-l2 center-align">
+                        <button class="waves-effect waves-light btn-large blue homeButton"><i
+                                class="material-icons left">home</i>Home</button>
+                    </div>
+                    <div class="col s12 m2 l2">
+                        <button class="waves-effect waves-light btn-large blue resetButton"><i
+                                class="material-icons left">home</i>Reset</button>
+                    </div>
+                    <div class="col s12 m5 l3 center-align">
+                        <button class="waves-effect waves-light btn-large blue uploadButton"><i
+                                class="material-icons left">send</i>Upload</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section class="pageContentWhileLoading">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    &nbsp;<br />
+                    &nbsp;<br />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pageLoader">
+        LOADING...
+    </section>
+    <footer></footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/endpoints.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/uploadapartmentphotos.js"></script>
+
+</body>
+
+</html>
