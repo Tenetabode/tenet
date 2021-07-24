@@ -37,4 +37,6 @@ var CONNECTION_DATA = {
 	"TENET_ALL_CALLBACK_LIST_ENDPOINT": "/employee/getcallbackrecords",
 	"TENET_UPLOAD_BUILDING_PHOTOS_ENDPOINT": "/upload/photos/building/",
 	"TENET_UPLOAD_APARTMENT_PHOTOS_ENDPOINT": "/upload/photos/apartment/",
+	"TENET_TOWERS_LIST_ENDPOINT_PART_1": "/building/",
+	"TENET_TOWERS_LIST_ENDPOINT_PART_2": "/alltowers",
 };

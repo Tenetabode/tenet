@@ -113,7 +113,8 @@ const fieldsToSend = {
     "registeredEmailId": noChange,
     "registeredPhoneNumber": noChange,
     "photoLinksInterior": noChange,
-    "photoLinksAmenities": noChange
+    "photoLinksAmenities": noChange,
+    "towerNames": noChange,
 };
 
 function readDataToSend() {

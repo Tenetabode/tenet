@@ -14,7 +14,7 @@ function sendToServer(
     }
   };
   xhttp.open(options.method, endpoint, true);
-  if(!options.noHeaderFlag){
+  if (!options.noHeaderFlag) {
     xhttp.setRequestHeader("Content-type", "application/json");
   }
   if (options.headers) {
@@ -337,4 +337,30 @@ function getAllCallBackRecordsList(callback) {
       callback(null);
     }
   );
+}
+
+function getTowersList(buildingId, callback) {
+  var employeeAuthToken = window.localStorage.getItem("tenetEmployeeAuthToken");
+  if (!buildingId) {
+    callback(null);
+  } else {
+    sendToServer({
+        method: "POST",
+        headers: {
+          "x-employee-access-token": employeeAuthToken,
+        },
+      },
+      CONNECTION_DATA.TENET_DOMAIN +
+      CONNECTION_DATA.TENET_TOWERS_LIST_ENDPOINT_PART_1 + buildingId + CONNECTION_DATA.TENET_TOWERS_LIST_ENDPOINT_PART_2,
+      "",
+      function (response1) {
+        var responseObj1 = JSON.parse(response1);
+        callback(responseObj1);
+      },
+      function (response1) {
+        console.log("ERROR : " + response1);
+        callback(null);
+      }
+    );
+  }
 }

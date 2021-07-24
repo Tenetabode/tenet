@@ -94,7 +94,8 @@ const fieldsToSend = {
     "status": noChange,
     "ownerName": noChange,
     "alternatePhoneNumber": noChange,
-    "ownerPlaceOfResidence": noChange
+    "ownerPlaceOfResidence": noChange,
+    "towerId": noChange,
 };
 
 function readDataToSend() {
@@ -132,6 +133,35 @@ window.onload = function (event) {
                 return;
             }
             wrapUpLoading();
+            getTowersList(buildingId, function (towerslist) {
+                var selectBox = document.getElementById("towerId");
+                if (!selectBox) {
+                    console.log("Selecting List Field Failed!....");
+                    return;
+                }
+                if (!towerslist || towerslist.length <= 0) {
+                    console.log("Fetching Towers List Failed!....");
+                    var newOption = document.createElement('option');
+                    newOption.appendChild(document.createTextNode("Tower 1"));
+                    newOption.setAttribute('value', "1");
+                    newOption.setAttribute('selected', "selected");
+                    selectBox.appendChild(newOption);
+                    var elems = document.querySelectorAll('select');
+                    var instances = M.FormSelect.init(elems, {});
+                    return;
+                }
+                for (var k = 0; k < towerslist.length; ++k) {
+                    var newOption = document.createElement('option');
+                    newOption.appendChild(document.createTextNode(towerslist[k].towerLabel));
+                    newOption.setAttribute('value', towerslist[k].towerId);
+                    if (towerslist[k].towerId == 1) {
+                        newOption.setAttribute('selected', "selected");
+                    }
+                    selectBox.appendChild(newOption);
+                }
+                var elems = document.querySelectorAll('select');
+                var instances = M.FormSelect.init(elems, {});
+            });
         });
     });
 
