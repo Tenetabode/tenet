@@ -61,9 +61,11 @@
                         &nbsp;
                         <div class="input-field">
                             <select id="class">
-                                <option value="Budget" selected>Budget</option>
+                                <option value="Budget">Budget</option>
                                 <option value="Premium">Premium</option>
                                 <option value="Luxury">Luxury</option>
+                                <option value="Residential" selected>Residential</option>
+                                <option value="">None</option>
                             </select>
                             <label for="class">Class :</label>
                             <span id="span-class" class="helper-text" data-error="Invalid Data"
@@ -98,6 +100,7 @@
                                 <option value="Aluva">Aluva</option>
                                 <option value="Panampally">Panampally</option>
                                 <option value="Palarivattom">Palarivattom</option>
+                                <option value="Kizhakambalam">Kizhakambalam</option>
                             </select>
                             <label for="region">Region :</label>
                             <span id="span-region" class="helper-text" data-error="Invalid Data"
@@ -134,9 +137,9 @@
                                 Value Above</span></div>
                     </div>
                     <div class="col s12 m12 l12">
-                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="towerNames"
-                                type="text" class="validate"><label for="towerNames">Tower Names</label><span
-                                id="span-towerNames" class="helper-text" data-error="Invalid Data"
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="towerName"
+                                type="text" class="validate"><label for="towerName">Tower Name</label><span
+                                id="span-towerName" class="helper-text" data-error="Invalid Data"
                                 data-success="Valid Data">Enter Field Value Above</span></div>
                     </div>
                     <div class="col s12 m6 l6">
@@ -616,6 +619,20 @@
                             </select>
                             <label for="featured">Featured Project :</label>
                             <span id="span-featured" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
+                    </div>
+                    <div class="col s12 m12 l6">
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="projectType">
+                                <option value="Residential" selected>Residential</option>
+                                <option value="Commercial">Commercial</option>
+                                <option value="Others">Others</option>
+                            </select>
+                            <label for="projectType">Project Type :</label>
+                            <span id="span-projectType" class="helper-text" data-error="Invalid Data"
                                 data-success="Valid Data">Enter Field Value Above</span>
                         </div>
                         &nbsp;

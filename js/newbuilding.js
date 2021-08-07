@@ -38,40 +38,34 @@ const readFromCheckBox = function (fieldName) {
     checkboxes.forEach((checkbox) => {
         data.push(checkbox.value);
     });
-    return data.join(",");
+    return data;
 }
 
 const convertForNearBySchema = function (fieldName) {
-    var placenames = [];
-    var distances = [];
-    var times = [];
     var g = 0;
     var elementsList = document.querySelectorAll("." + fieldName + " .placename");
-    for (g = 0; g < elementsList.length; ++g) {
-        placenames.push(elementsList[g].value);
+    var max = elementsList.length;
+    var data = [];
+    for (g = 0; g < max; ++g) {
+        data.push({
+            "name": elementsList[g].value
+        });
     }
     elementsList = document.querySelectorAll("." + fieldName + " .distance");
-    for (g = 0; g < elementsList.length; ++g) {
-        distances.push(elementsList[g].value);
+    for (g = 0; g < elementsList.length && g < max; ++g) {
+        data[g]["distance"] = elementsList[g].value;
     }
     elementsList = document.querySelectorAll("." + fieldName + " .time");
-    for (g = 0; g < elementsList.length; ++g) {
-        times.push(elementsList[g].value);
+    for (g = 0; g < elementsList.length && g < max; ++g) {
+        data[g]["timeToReach"] = elementsList[g].value;
     }
     var dataOfNearByPlace = [];
-    var h = 0;
-    for (h = 0; h < placenames.length && h < distances.length && h < times.length; ++h) {
-        if (placenames[h].trim().length > 0 && distances[h].trim().length > 0 && times[h].trim().length) {
-            var data = "";
-            data += placenames[h] + " ";
-            data += distances[h] + " ";
-            data += times[h];
-            dataOfNearByPlace.push(data);
-        } else {
-            break;
+    for (g = 0; g < data.length; ++g) {
+        if ((data[g].name && data[g].name.trim().length > 0) || (data[g].distance && data[g].distance.trim().length > 0) || (data[g].timeToReach && data[g].timeToReach.trim().length > 0)) {
+            dataOfNearByPlace.push(data[g]);
         }
     }
-    return dataOfNearByPlace.join(",");
+    return dataOfNearByPlace;
 }
 
 const fieldsToSend = {
@@ -114,7 +108,9 @@ const fieldsToSend = {
     "registeredPhoneNumber": noChange,
     "photoLinksInterior": noChange,
     "photoLinksAmenities": noChange,
-    "towerNames": noChange,
+    "towerName": noChange,
+    "contactNumber": noChange,
+    "projectType": noChange,
 };
 
 function readDataToSend() {

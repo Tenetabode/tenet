@@ -96,6 +96,9 @@ const fieldsToSend = {
     "alternatePhoneNumber": noChange,
     "ownerPlaceOfResidence": noChange,
     "towerId": noChange,
+    "listedBy": noChange,
+    "dealTypePreferredByOwner": noChange,
+    "ownerMailId": noChange,
 };
 
 function readDataToSend() {

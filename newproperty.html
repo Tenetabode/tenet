@@ -376,6 +376,12 @@
                                 id="span-alternatePhoneNumber" class="helper-text" data-error="Invalid Data"
                                 data-success="Valid Data">Enter Field Value Above</span></div>
                     </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field"><i class="material-icons prefix">edit</i><input id="ownerMailId"
+                                type="text" class="validate"><label for="ownerMailId">Owner Mail Id</label><span
+                                id="span-ownerMailId" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span></div>
+                    </div>
                     <div class="col s12 m12 l12">
                         &nbsp;
                         <div class="input-field">
@@ -421,6 +427,33 @@
                     </div>
                     <div class="col s12">
                         <h5>OTHER DETAILS</h5>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="listedBy">
+                                <option value="Owner" selected>Owner</option>
+                                <option value="Builder">Builder</option>
+                                <option value="Broker">Broker</option>
+                            </select>
+                            <label for="listedBy">Property Listed By :</label>
+                            <span id="span-listedBy" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
+                    </div>
+                    <div class="col s12 m6 l6">
+                        &nbsp;
+                        <div class="input-field">
+                            <select id="dealTypePreferredByOwner">
+                                <option value="Direct" selected>Direct</option>
+                                <option value="Direct and Broker">Direct and Broker</option>
+                            </select>
+                            <label for="dealTypePreferredByOwner">Deal Type Preferred By Owner :</label>
+                            <span id="span-dealTypePreferredByOwner" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Field Value Above</span>
+                        </div>
+                        &nbsp;
                     </div>
                     <div class="col s12 m6 l6">
                         <div class="input-field"><i class="material-icons prefix">edit</i><input id="bedrooms"
