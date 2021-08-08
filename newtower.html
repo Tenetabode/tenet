@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+    <title>New Tower Page</title>
+
+    <!-- CSS  -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <header></header>
+    <section class="pageContentWhileLoading">
+        <div class="container">
+            <h6>&nbsp;</h6>
+            <h3 class="center-align">TENET</h3>
+        </div>
+    </section>
+    <section class="pageContentWhileLoading">
+        <div class="container">
+            <h6 class="center-align">Add New Tower Form</h6>
+        </div>
+    </section>
+    <section class="pageContentWhileLoading">
+        <form>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">account_circle</i>
+                            <input id="towerLabel" type="text" class="validate">
+                            <label for="towerLabel">Tower Label</label>
+                            <span id="span-towerLabel" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Tower Label Above</span>
+                        </div>
+                    </div>
+                    <div class="col s12 m6 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">mail</i>
+                            <input id="maintenanceFee" type="number" class="validate">
+                            <label for="maintenanceFee">Maintenance Fee</label>
+                            <span id="span-maintenanceFee" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Maintenance Fee Above</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l6">
+                        <div class="input-field">
+                            <i class="material-icons prefix">call</i>
+                            <input id="contactNumber" type="tel" class="validate" pattern="[0-9]{10}">
+                            <label for="contactNumber">Contact Number</label>
+                            <span id="span-contactNumber" class="helper-text" data-error="Invalid Data"
+                                data-success="Valid Data">Enter Contact No Above</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12 m6 l4 offset-l2 center-align">
+                        <button id="cancelButton" class="btn waves-effect waves-light blue darken-3">Cancel
+                            <i class="material-icons right">close</i>
+                        </button>
+                    </div>
+                    <div class=" col s12 hide-on-med-and-up">
+                        &nbsp;
+                    </div>
+                    <div class="col s12 m6 l4 center-align">
+                        <button id="submitButton" class="btn waves-effect waves-light blue darken-3" type="submit">Add
+                            Tower
+                            <i class="material-icons right">send</i>
+                        </button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col s12">
+                        &nbsp;
+                    </div>
+                </div>
+            </div>
+        </form>
+    </section>
+    <section class="pageLoader">
+        LOADING...
+    </section>
+    <footer></footer>
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="js/endpoints.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/newtower.js"></script>
+
+</body>
+
+</html>

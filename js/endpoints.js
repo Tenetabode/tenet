@@ -13,6 +13,8 @@ var CONNECTION_DATA = {
 	"TENET_EMPLOYEE_CALLBACK_LIST_PAGE": "/tenet/callbacklist.html",
 	"TENET_UPLOAD_BUILDING_PHOTOS_PAGE": "/tenet/uploadbuildingphotos.html",
 	"TENET_UPLOAD_APARTMENT_PHOTOS_PAGE": "/tenet/uploadapartmentphotos.html",
+	"TENET_NEW_TOWER_PAGE": "/tenet/newtower.html",
+	"TENET_NEW_PERMISSION_PAGE": "/tenet/newpermission.html",
 	"TENET_EMPLOYEE_LOGIN_ENDPOINT": "/employee/signin",
 	"TENET_EMPLOYEE_PROFILE_ENDPOINT": "/employee/profile",
 	"TENET_ALL_BUILDERS_LIST_ENDPOINT": "/builder/all",
@@ -39,4 +41,6 @@ var CONNECTION_DATA = {
 	"TENET_UPLOAD_APARTMENT_PHOTOS_ENDPOINT": "/upload/photos/apartment/",
 	"TENET_TOWERS_LIST_ENDPOINT_PART_1": "/building/",
 	"TENET_TOWERS_LIST_ENDPOINT_PART_2": "/alltowers",
+	"TENET_NEW_TOWER_ENDPOINT": "/employee/addtower",
+	"TENET_NEW_PERMISSION_ENDPOINT": "/employee/addmanagementuserpermission",
 };

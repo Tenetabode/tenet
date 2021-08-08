@@ -92,4 +92,12 @@ window.onload = function (event) {
         });
     }
 
+    var addPermissionButtons = document.getElementsByClassName("addPermissionButton");
+    for (g = 0; g < addPermissionButtons.length; ++g) {
+        addPermissionButtons[g].addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location = CONNECTION_DATA.TENET_NEW_PERMISSION_PAGE;
+        });
+    }
+
 }

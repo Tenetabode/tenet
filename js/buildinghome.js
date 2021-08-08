@@ -79,6 +79,14 @@ window.onload = function (event) {
         });
     }
 
+    var newTowerButtons = document.getElementsByClassName("addNewTowerDetailsButton");
+    for (g = 0; g < newTowerButtons.length; ++g) {
+        newTowerButtons[g].addEventListener('click', function (event) {
+            event.preventDefault();
+            window.location = CONNECTION_DATA.TENET_NEW_TOWER_PAGE + "?buildingId=" + buildingId;
+        });
+    }
+
     var homeButtons = document.getElementsByClassName("homeButton");
     for (g = 0; g < homeButtons.length; ++g) {
         homeButtons[g].addEventListener('click', function (event) {
